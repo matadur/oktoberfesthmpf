@@ -1,0 +1,16 @@
+{
+  "name": "OktoberfestHMPF",
+  "version": "0.0.1",
+  "description": "Herron-Morton Oktoberfest 2013",
+  "contributors": [ 
+    {
+      "name": "David Brainer-Banker",
+      "email": "dave@brainerbanker.com"
+    } 
+  ],
+  "private": true,
+  "devDependencies": {
+	"grunt": "~0.4.1",
+    "grunt-s3": "*"
+  }
+}

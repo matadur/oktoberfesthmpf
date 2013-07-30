@@ -11,6 +11,7 @@
   "private": true,
   "devDependencies": {
 	"grunt": "~0.4.1",
-    "grunt-s3": "*"
+    "grunt-s3": "*",
+    "grunt-recess": "0.3.3"
   }
 }

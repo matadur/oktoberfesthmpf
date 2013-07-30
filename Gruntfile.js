@@ -44,11 +44,29 @@ module.exports = function(grunt) {
 			}
 		  ],
 		}
-	  }
+	  },
+		recess: {
+			compile: {
+				src: ['public/css/main.less'],
+				dest: 'public/css/main.css',
+				options: {
+					compile: true
+				}
+			},
+			compress: {
+				src: ['public/css/main.less'],
+				dest: 'public/css/main.min.css',
+				options: {
+					compile: true,
+					compress: true
+				}
+			}
+		}
 	});
 
 	// Default task.
-	grunt.registerTask('default', ['s3']);
+	grunt.registerTask('default', ['recess:compile', 'recess:compress']);
 
 	grunt.loadNpmTasks('grunt-s3');
+	grunt.loadNpmTasks('grunt-recess');
 };

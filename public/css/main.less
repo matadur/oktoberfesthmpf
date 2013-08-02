@@ -10,23 +10,21 @@ html {
 }
 
 body { 
-	padding-top: 70px; 
-	
+	padding-top: 70px; 	
 }
 
 .container{
 	width: 100%;
+	max-width: 100%;
 }
 
-ul.navbar-nav{
-	background-color: #eee;
-	width: 100%;
+.navbar{
+  margin-bottom: 0;
 }
 
 .banner-top{
   width:100%;
-  margin-top: -30px;
-
+  margin-top: -20px;
 }
 
 .banner-top img{
@@ -36,19 +34,15 @@ ul.navbar-nav{
 }
 
 .jumbotron{
-  width: 1000px;
+  width: 600px;
   margin: 0 auto;
   background-color: @highlight;
 }
 
 section{
-  /*
-    put in div to get different image for each
-    background-image: url(http://placekitten.com/500/200);
-  */
   width:500px;
   height:250px;
-  padding: 0;
+  padding-top: 34px;
   margin: 20px auto;  
 }
 
@@ -56,8 +50,4 @@ section img{
   width:500px;
   border: solid @highlight 1px;
   .opacity(0.4);
-}
-
-.anchor-stop{
-  padding: 12px;
 }

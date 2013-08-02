@@ -16,11 +16,11 @@
 
   	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>	
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#main-nav">
   	<div class="container">
-    	<div class="navbar navbar-fixed-top">
+    	<div id="main-nav" class="navbar navbar-fixed-top">
     	  <ul class="nav navbar-nav">
-    	    <li class="active"><a href="#">Home</a></li>
+    	    <li class="active"><a href="#home" class="navbar-brand">Home</a></li>
     	    <li><a href="#beer" class="navbar-brand">Beer and Food</a></li>
     	  	<li><a href="#music" class="navbar-brand">Music</a></li>
     	  	<li><a href="#swag" class="navbar-brand">SWAG</a></li>
@@ -33,45 +33,40 @@
     	  <img src="http://placekitten.com/1000/300" />
     	</div>
     	
+    	<a id="home" class="anchor-stop"></a>
+    	
     	<div class="jumbotron">
         <h1>Herron-Morton Place Oktoberfest</h1>
         <p class="lead">Enjoy beer, hard cider, mead, food trucks, live music and more at the third annual Herron-Morton Place Oktoberfest. The event will take place in the historic Herron-Morton Place park and all proceeds go towards a park endowment. Watch for details coming soon!</p>
         <h2>September 28th, 2013. 2-10pm</h2>
       </div>
 
-      
-      <section>
-        <a name="beer" class="anchor-stop"></a>
+      <section id="beer">
         <h3>Beer and Food</h3>      
         <img src="http://placekitten.com/500/200" />
       </section>
       
-      <section>
-        <a name="music" class="anchor-stop"></a>
+      <section id="music">
         <h3>Music</h3>      
         <img src="http://placekitten.com/500/202" />
       </section>
       
-      <section>
-        <a name="swag" class="anchor-stop"></a>
+      <section id="swag">
         <h3>SWAG</h3>      
         <img src="http://placekitten.com/500/204" />
       </section>
       
-      <section>
-        <a name="map" class="anchor-stop"></a>
+      <section id="map">
         <h3>Map</h3>      
         <img src="http://placekitten.com/500/206" />
       </section>
       
-      <section>
-        <a name="faq" class="anchor-stop"></a>
+      <section id="faq">
         <h3>FAQ</h3>      
         <img src="http://placekitten.com/500/208" />
       </section>
       
-      <section>
-        <a name="sponsors" class="anchor-stop"></a>
+      <section id="sponsors">
         <h3>Sponsors</h3>      
         <img src="http://placekitten.com/500/210" />
       </section>

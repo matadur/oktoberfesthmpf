@@ -9,6 +9,9 @@
     } 
   ],
   "private": true,
+  "dependencies": {
+    "connect": "2.7.2"
+  },
   "devDependencies": {
 	"grunt": "~0.4.1",
     "grunt-s3": "*",

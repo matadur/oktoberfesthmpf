@@ -37,19 +37,44 @@ a#home{
 
 .banner-top{
   width:100%;
+  position: relative;
   margin-top: -20px;
-}
-
-.banner-top img{
-  width:100%;
-  height:300px;
-  .opacity(0.72);
+  background-repeat: no-repeat;
+  min-height: 500px;
+  background: url(../img/header1200x800.png) no-repeat center top fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
 }
 
 .jumbotron{
   width: 600px;
   margin: 0 auto;
   background-color: @highlight;
+}
+
+#section_buttons{
+  margin-top: 0;
+  padding: 26px;    
+}
+
+#section_buttons ul{
+  list-style-type: none;
+  margin:0; padding: 0;
+}
+
+#section_buttons li {
+  display:inline;
+  float: left;
+  margin: 10px;
+}
+#section_buttons .icon{
+  margin: 5px;
+}
+
+#section_buttons .inset{
+  float: right;
 }
 
 section{

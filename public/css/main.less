@@ -71,17 +71,22 @@ a#home{
   float: right;
 }
 
-section{
+section {
   width:500px;
   height:250px;
   padding-top: 34px;
   margin: 20px auto;  
 }
 
-section img{
-  width:500px;
-  border: solid @highlight 1px;
-  .opacity(0.4);
+.col {
+	width: 42%;
+	margin: 0 4%;
+	&.left {
+		float: left;
+	}
+	&.right {
+		float: right;
+	}
 }
 
 #footer{

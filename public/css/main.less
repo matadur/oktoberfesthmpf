@@ -19,6 +19,7 @@ body {
 	background-size: cover;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	.transition(background 1s);
 	&.beer {
 		background-image: url(../img/glasses.jpg);
 	}
@@ -52,18 +53,14 @@ body {
 	/* should we make this translucent? */
 	background: #fff;
 	max-width: 767px;
+	padding: 20px 40px 40px;
 }
 
 #footer {
 	margin-top: 64px;
-}
-
-#footer .container {
-	color: orange;
-	width: 800px;
-	margin: 0 auto;
-	padding: 20px;
-	text-align: center;
+	.container {
+		padding: 0 40px;
+	}
 }
 
 /* Wrapper for page content to push down footer */

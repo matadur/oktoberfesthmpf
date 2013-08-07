@@ -1,18 +1,40 @@
 @import "bootstrap/bootstrap.less";
 
-@base: blue;
 @highlight: rgba(255,167,0,0.16);
 
-html {
-	color: @base;
-	width: 100%;
-	height: 100%;
-	margin: 0; padding: 0;
+html, body, .body {
+  	margin: 0;
+  	padding: 0;
+  	width: 100%;
+  	height: 100%;
+  	min-width: 100%;
+  	min-height: 100%;
 }
 
-body { 
-	padding-top: 70px; 	
-	height: 100%;
+body {
+	background: #fff url(../img/header.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	&.beer {
+		background-image: url(../img/glasses.jpg);
+	}
+	&.music {
+		background-image: url(../img/music.jpg);
+	}
+	&.map {
+		background-image: none;
+	}
+	&.tickets {
+		background-image: url(../img/bikes.jpg);
+	}
+}
+
+.body {
+	padding-top: 70px;
 }
 
 a#home{
@@ -43,11 +65,6 @@ a#home{
   margin-top: -20px;
   background-repeat: no-repeat;
   min-height: 500px;
-  background: url(../img/header.jpg) no-repeat center top fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
 }
 
 .jumbotron{  

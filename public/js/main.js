@@ -13,4 +13,19 @@ $(function () {
 	}, function (e) {
 		body.toggleClass(e.currentTarget.hash.replace('#', ''), false);
 	});
+	
+  var images = [
+    	'../img/glasses.jpg',
+      '../img/music.jpg',
+      '../img/bikes.jpg',
+      '../img/vendors2c.jpg'
+    ];
+			
+  $.preload(images, 1, function(last){
+	  	if (last) {
+	  		/* console.log('images loaded'); */
+	  	}
+	  });
+			
 });
+

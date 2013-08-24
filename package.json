@@ -10,11 +10,11 @@
   ],
   "private": true,
   "dependencies": {
-    "connect": "2.7.2"
+    "connect": "*"
   },
   "devDependencies": {
-	"grunt": "~0.4.1",
+	"grunt": "*",
     "grunt-s3": "*",
-    "grunt-recess": "0.3.3"
+    "grunt-recess": "*"
   }
 }

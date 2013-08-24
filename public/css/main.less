@@ -20,16 +20,19 @@ body {
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
 	.transition(background .8s);
-	&.beer {
+	&.home.hover, &.home-current {
+		background-image: url(../img/header.jpg);
+	}
+	&.beer.hover, &.beer-current {
 		background-image: url(../img/glasses.jpg);
 	}
-	&.music {
+	&.music.hover, &.music-current {
 		background-image: url(../img/music.jpg);
 	}
-	&.map {
+	&.map.hover, &.map-current {
 		background-image: url(../img/bikes.jpg);
 	}
-	&.tickets {
+	&.tickets.hover, &.tickets-current {
 		background-image: url(../img/people.jpg);
 	}
 }

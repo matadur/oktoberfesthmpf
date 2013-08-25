@@ -38,8 +38,18 @@ module.exports = function(grunt) {
 			  gzip: true
 			},
 			{
+			  src: 'public/js/vendor/*',
+			  dest: '/js/vendor/',
+			  gzip: true
+			},
+			{
 			  src: 'public/img/*',
 			  dest: '/img/',
+			  gzip: false
+			},
+			{
+			  src: 'public/img/vendor/*',
+			  dest: '/img/vendor/',
 			  gzip: false
 			}
 		  ],

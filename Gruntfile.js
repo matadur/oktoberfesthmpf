@@ -28,7 +28,7 @@ module.exports = function(grunt) {
 			  gzip: false
 			},
 			{
-			  src: 'public/css/*',
+			  src: 'public/css/*.css',
 			  dest: '/css/',
 			  gzip: true
 			},
@@ -51,6 +51,11 @@ module.exports = function(grunt) {
 			  src: 'public/img/vendor/*',
 			  dest: '/img/vendor/',
 			  gzip: false
+			},
+			{
+			  src: 'public/fonts/*',
+			  dest: '/fonts/',
+			  gzip: true
 			}
 		  ],
 		}

@@ -12,19 +12,18 @@ html, body {
 }
 
 body {
-	background: #fff;
+	background: #fff url(../img/header.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	.transition(background .8s);
 }
 
 @media (min-width: @grid-float-breakpoint) {
     body {
-    	background: #fff url(../img/header.jpg) no-repeat center center fixed;
-    	.transition(background .8s);
     	&.home.hover, &.home-current {
     		background-image: url(../img/header.jpg);
     	}
@@ -79,6 +78,10 @@ body {
     		padding: 0;
     		margin: 0;
     	}
+    }
+    
+    #footer {
+    	margin-top: 64px;
     }
 }
 
@@ -147,13 +150,12 @@ body {
 }
 
 #footer {
-	margin-top: 64px;
 	.container {
 		padding: 12px 20px;
 	}
-	h5{
-  	margin:0 0 2px 0;
-  	padding: 0 0 4px 0;
+	h5 {
+      	margin: 0 0 2px 0;
+      	padding: 0 0 4px 0;
 	}
 }
 

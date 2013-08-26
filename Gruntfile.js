@@ -40,7 +40,10 @@ module.exports = function(grunt) {
 			{
 			  src: 'public/img/*',
 			  dest: '/img/',
-			  gzip: false
+			  gzip: false,
+			  headers: {
+    			  'Cache-Control': 'max-age:86400000'
+			  }
 			},
 			{
 			  src: 'public/img/vendor/*',

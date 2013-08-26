@@ -12,54 +12,74 @@ html, body {
 }
 
 body {
-	background: #fff url(../img/header.jpg) no-repeat center center fixed;
+	background: #fff;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-	.transition(background .8s);
-	&.home.hover, &.home-current {
-		background-image: url(../img/header.jpg);
-	}
-	&.beer.hover, &.beer-current {
-		background-image: url(../img/glasses.jpg);
-	}
-	&.music.hover, &.music-current {
-		background-image: url(../img/music.jpg);
-	}
-	&.map.hover, &.map-current {
-		background-image: url(../img/bikes.jpg);
-	}
-	&.tickets.hover, &.tickets-current {
-		background-image: url(../img/people.jpg);
-	}
 }
 
-#preload1 {
-	background-image: url(../img/glasses.jpg);
-	width: 0;
-	height: 0;
-}
-#preload2 {
-	background-image: url(../img/music.jpg);
-	width: 0;
-	height: 0;
-}
-#preload3 {
-	background-image: url(../img/bikes.jpg);
-	width: 0;
-	height: 0;
-}
-#preload4 {
-	background-image: url(../img/people.jpg);
-	width: 0;
-	height: 0;
+@media (min-width: @grid-float-breakpoint) {
+    body {
+    	background: #fff url(../img/header.jpg) no-repeat center center fixed;
+    	.transition(background .8s);
+    	&.home.hover, &.home-current {
+    		background-image: url(../img/header.jpg);
+    	}
+    	&.beer.hover, &.beer-current {
+    		background-image: url(../img/glasses.jpg);
+    	}
+    	&.music.hover, &.music-current {
+    		background-image: url(../img/music.jpg);
+    	}
+    	&.map.hover, &.map-current {
+    		background-image: url(../img/bikes.jpg);
+    	}
+    	&.tickets.hover, &.tickets-current {
+    		background-image: url(../img/people.jpg);
+    	}
+    }
+
+    #preload1 {
+    	background-image: url(../img/glasses.jpg);
+    	width: 0;
+    	height: 0;
+    }
+    #preload2 {
+    	background-image: url(../img/music.jpg);
+    	width: 0;
+    	height: 0;
+    }
+    #preload3 {
+    	background-image: url(../img/bikes.jpg);
+    	width: 0;
+    	height: 0;
+    }
+    #preload4 {
+    	background-image: url(../img/people.jpg);
+    	width: 0;
+    	height: 0;
+    }
+
+    .header {
+    	height: 400px;
+    }
+    
+    .tab {
+    	margin: -130px 0 0 -40px;
+    	float: left;
+    	background: #fff;
+    	padding: 0 15px 10px;
+    	h1, h2 {
+    		padding: 0;
+    		margin: 0;
+    	}
+    }
 }
 
 .header {
-	height: 400px;
 	#main-nav {
 		background: #fff;
 	}
@@ -74,17 +94,6 @@ body {
 	background: #fff;
 	max-width: 700px;
 	padding: 20px 40px 40px;
-}
-
-.tab {
-	margin: -130px 0 0 -40px;
-	float: left;
-	background: #fff;
-	padding: 0 15px 10px;
-	h1, h2 {
-		padding: 0;
-		margin: 0;
-	}
 }
 
 .img-circle {

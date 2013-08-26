@@ -65,6 +65,9 @@ body {
 
     .header {
     	height: 400px;
+    	.mobile-header {
+        	display: none;
+    	}
     }
     
     .tab {
@@ -82,12 +85,24 @@ body {
 .header {
 	#main-nav {
 		background: #fff;
+		margin-bottom: 0;
 	}
 	#logo {
     	height: 36px;
     	width: auto;
     	margin: 7px 15px;
 	}
+	.mobile-header {
+    	margin: 0;
+    	padding: 0;
+    	border: 0px none;
+    	width: 100%;
+    	height: auto;
+	}
+}
+
+.tab {
+    padding-bottom: 10px;
 }
 
 .container {
@@ -149,7 +164,7 @@ body {
 	height: auto !important;
 	height: 100%;
 	/* Negative indent footer by it's height */
-	margin: 70px auto -60px;
+	margin: 50px auto -60px;
 }
 
 /* Set the fixed height of the footer here */

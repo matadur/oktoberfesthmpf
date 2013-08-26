@@ -3,12 +3,7 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
 	  s3: {
-		options: {
-		  key: '',
-		  secret: '',
-		  bucket: 'oktoberfesthmpf',
-		  access: 'public-read'
-		},
+		options: grunt.file.readJSON('s3.json'),
 		dev: {
 		  // Files to be uploaded.
 		  upload: [
@@ -76,6 +71,11 @@ module.exports = function(grunt) {
 					compress: true
 				}
 			}
+		},
+		smushit: {
+			path: {
+				src:'public/img'
+			}
 		}
 	});
 
@@ -84,4 +84,5 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('grunt-s3');
 	grunt.loadNpmTasks('grunt-recess');
+	grunt.loadNpmTasks('grunt-smushit');
 };

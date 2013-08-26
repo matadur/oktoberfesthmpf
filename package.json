@@ -15,6 +15,7 @@
   "devDependencies": {
 	"grunt": "*",
     "grunt-s3": "*",
-    "grunt-recess": "*"
+    "grunt-recess": "*",
+    "grunt-smushit": "*"
   }
 }

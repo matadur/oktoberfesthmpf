@@ -16,6 +16,7 @@
 	"grunt": "*",
     "grunt-s3": "*",
     "grunt-recess": "*",
-    "grunt-smushit": "*"
+    "grunt-smushit": "*",
+    "grunt-contrib-uglify": "*"
   }
 }

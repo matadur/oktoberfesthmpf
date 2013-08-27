@@ -1,7 +1,5 @@
 @import "bootstrap/bootstrap.less";
 
-@highlight: rgba(255,167,0,0.16);
-
 html, body {
   	margin: 0;
   	padding: 0;
@@ -19,7 +17,7 @@ body {
 	background-size: cover;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-	.transition(background .8s);
+	.transition(background .7s);
 }
 
 @media (min-width: @grid-float-breakpoint) {
@@ -73,7 +71,7 @@ body {
     	margin: -130px 0 0 -40px;
     	float: left;
     	background: #fff;
-    	padding: 0 15px 10px;
+    	padding: 0 @padding-large-horizontal 10px;
     	h1, h2 {
     		padding: 0;
     		margin: 0;
@@ -83,6 +81,18 @@ body {
     #footer {
     	margin-top: 64px;
     }
+    
+    #actions {
+        .btn-block {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: @grid-float-breakpoint) {
+    .ticketsDesktop {
+        display: none;
+    }
 }
 
 .header {
@@ -91,9 +101,9 @@ body {
 		margin-bottom: 0;
 	}
 	#logo {
-    	height: 36px;
+    	height: 34px;
     	width: auto;
-    	margin: 7px 15px;
+    	margin: @padding-base-vertical @padding-large-horizontal;
 	}
 	.mobile-header {
     	margin: 0;
@@ -102,6 +112,15 @@ body {
     	width: 100%;
     	height: auto;
 	}
+}
+
+#actions {
+    .btn-block {
+        margin-bottom: @padding-large-vertical;
+        .glyphicon {
+            padding-right: @padding-small-horizontal;
+        }
+    }
 }
 
 .tab {

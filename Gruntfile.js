@@ -56,6 +56,11 @@ module.exports = function(grunt) {
                       gzip: false
                     },
                     {
+                      src: 'public/img/map/*',
+                      dest: '/img/map/',
+                      gzip: false
+                    },
+                    {
                       src: 'public/fonts/*',
                       dest: '/fonts/',
                       gzip: true

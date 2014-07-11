@@ -3,7 +3,7 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
         s3: {
-            options: grunt.file.readJSON('s3.json'),
+            //options: grunt.file.readJSON('s3.json'),
             dev: {
                 // Files to be uploaded.
                 upload: [

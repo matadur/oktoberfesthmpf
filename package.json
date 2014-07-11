@@ -1,8 +1,12 @@
 {
   "name": "OktoberfestHMPF",
-  "version": "0.0.1",
-  "description": "Herron-Morton Oktoberfest 2013",
+  "version": "1.2.1",
+  "description": "Herron-Morton Oktoberfest 2014",
   "contributors": [ 
+    {
+      "name": "Matt Durr",
+      "email": "matt@onedurr.com"
+    },
     {
       "name": "David Brainer-Banker",
       "email": "dave@brainerbanker.com"

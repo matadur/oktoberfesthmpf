@@ -5,13 +5,13 @@ Running the website locally:
 
 1. Git `checkout` or `pull` the latest code
 
-2. Install node, if you don't have it (e.g. brew install npm)
+2. Install node, if you don`t have it (e.g. brew install npm)
 
 3. Run `npm install` in the directory you pulled the code to
 
-4. Run 'npm install connect' and 'npm install serve-static'
+4. Run `npm install connect` and `npm install serve-static`
 
-5. Install grunt, if you don't have it (npm install -g grunt-cli)
+5. Install grunt, if you don`t have it (npm install -g grunt-cli)
  
 6. Run `grunt`
 

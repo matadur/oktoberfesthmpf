@@ -10,7 +10,7 @@ $(function () {
     ticketLinks.on('click', function (e) {
         if (!ticketSection.is(":visible")) {
             e.preventDefault();
-            window.location = "http://indianapolis-oktoberfest.eventbrite.com";
+            window.location = "http://hmpoktoberfest2014.eventbrite.com/";
         }
 	});
 
